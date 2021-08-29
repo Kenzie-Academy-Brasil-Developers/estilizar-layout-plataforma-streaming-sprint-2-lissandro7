@@ -17,7 +17,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /* VARIÁVEIS */
 :root{
 		--fundo:#00002e;
-		--letra:white;
+		--letra:rgb(175, 174, 174);
+
 }
 
 /*BODY*/
@@ -59,6 +60,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	font-size: 4rem;
 	padding: 50px;
 	text-align: center;
+	color: white;
 	
 	
 }
@@ -91,11 +93,16 @@ figcaption{
 .caixa--item{
 	display: flex;
 	position: relative;
+	border: 2px solid transparent;
 
 	
 	
 }
 
+.caixa--item:hover{
+	border: 2px solid var(--letra);
+
+}
 
 .caixa--sub-titulo{
 	
@@ -148,7 +155,7 @@ footer{
 	
 	display: flex;
 	position: relative;
-	color: white;
+	color: var(--letra);
 	top: 75px;
 	
 	
