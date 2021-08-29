@@ -9,6 +9,7 @@
 	<title>Kenzieflix</title>
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css" />
 
 	<!-- FAVICON -->
@@ -20,56 +21,56 @@
 	<header class="topo">
 		<figure>
 			<img src="img/logo.png" alt="Kenzieflix">
-			<figcaption>Kenzieflix</figcaption>
+			
 		</figure>
 	</header>
 
 	<!-- PÁGINA INICIAL -->
 	<div class="pg-home">
 		
-		<section>
+		<section class="caixa">
 
-			<header>
-				<h2>Quem está assistindo?</h2>
+			<header  >
+				<h2 class="caixa--titulo">Quem está assistindo?</h2>
 			</header>
 
 			<!-- LISTA DE USUÁRIOS -->
-			<ul>
+			<ul class="caixa--lista">
 				
 				<!-- USUÁRIO 1 -->
-				<li>
-					<figure>
-						<img src="img/avatar.png" alt="Gabriel">
+				<li class="caixa--item">
+					<figure class="caixa--figura">
+						<img  src="img/avatar.png" alt="Gabriel">
 						<figcaption>Gabriel</figcaption>
 					</figure>
 
-					<h3>Gabriel</h3>
+					<h3 class="caixa--sub-titulo">Gabriel</h3>
 				</li>
 				
 				<!-- USUÁRIO 2 -->
-				<li>
+				<li class="caixa--item">
 					<figure>
-						<img src="img/avatar1.png" alt="Maria">
+						<img  src="img/avatar1.png" alt="Maria">
 						<figcaption>Maria</figcaption>
 					</figure>
 
-					<h3>Maria</h3>
+					<h3 class="caixa--sub-titulo">Maria</h3>
 				</li>
 				
 				<!-- USUÁRIO 3 -->
-				<li>
+				<li class="caixa--item">
 					<figure>
 						<img src="img/avatar2.png" alt="Renato">
 						<figcaption>Renato</figcaption>
 					</figure>
 
-					<h3>Renato</h3>
+					<h3 class="caixa--sub-titulo">Renato</h3>
 				</li>
 
 				<!-- ADICIONAR PERFIL-->
 				<li class="addPerfil">
 					<figure>
-						<img src="img/plus-sign.png" alt="Adicionar perfil">
+						<img class="adicionar"  src="img/plus-sign.png" alt="Adicionar perfil">
 						<figcaption>Adicionar perfil</figcaption>
 					</figure>
 
@@ -79,7 +80,7 @@
 			</ul>
 
 			<footer>
-				<button>Gerenciar Perfis</button>
+				<button class="botao">Gerenciar Perfis</button>
 			</footer>
 
 		</section>
