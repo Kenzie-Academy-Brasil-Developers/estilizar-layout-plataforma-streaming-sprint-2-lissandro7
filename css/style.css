@@ -26,12 +26,13 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		background-color: var(--fundo);
 		color: var(--letra) ;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		
+		width: 100%;
 	}
 
 /*TOPO*/
 	header.topo{
-		font-size: 3rem;
+		font-size: 2rem;
+		margin-bottom: 30px;
 	
 	}
 
@@ -41,28 +42,24 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /*PÁGINA INICIAL*/
 	div.pg-home{
 		width: 100%;
-	
-		
+		text-align: center;	
 	}
 
 	.caixa--lista{
 		position: relative;
 		display: flex;
-		max-width: 858px;
 		justify-content: space-around;
 		margin: 0 auto;
 		flex-wrap: wrap;
-
 	}
 
 .caixa--titulo{
 
-	font-size: 4rem;
-	padding: 50px;
+	font-size: 2rem;
 	text-align: center;
 	color: white;
-	
-	
+	font-weight: 800;
+	margin-bottom: 40px;	
 }
 .addPerfil{
 	display: flex;
@@ -73,8 +70,6 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 figure{
 	
 	display: flex;
-	
-
 }
 
 .caixa img{
@@ -82,8 +77,6 @@ figure{
 	display: flex;	
 	width: 186px;
 	height: 186px;
-	
-
 }
 
 figcaption{
@@ -94,9 +87,13 @@ figcaption{
 	display: flex;
 	position: relative;
 	border: 2px solid transparent;
+	width: 186px;
+	
+}
 
-	
-	
+.caixa--item img{
+	width:168px ;
+	margin: 20px 0;
 }
 
 .caixa--item:hover{
@@ -108,12 +105,14 @@ figcaption{
 	
 	position: absolute;
 	top: 200px;
-	left: 50%;
+	left: 45%;
 	transform:translateX(-50%);
 	padding: 15px;
 	
+}
+.addPerfil{
+	width: 186px;
 	
-
 }
 
 .addPerfil img{
@@ -121,13 +120,12 @@ figcaption{
 		display: flex;	
 		width: 110px;
 		height: 110px;
-		
-	
 }
 .addPerfil figure{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	margin-top: 30px;
 }
 
 footer{
@@ -149,16 +147,29 @@ footer{
 	background-color: var(--fundo);
 	color: var(--letra);
 	top: 100px;
-
 }
 .addPerfil h3{
 	
 	display: flex;
 	position: relative;
 	color: var(--letra);
-	top: 75px;
-	
-	
+	top: 45px;
+	margin: 0 auto;
 }
 
+@media  (min-width: 400px){
 
+.caixa--lista{
+	width: 858px;
+	margin: 0 auto;
+}
+
+}
+
+@media (max-width: 700px){
+	.caixa--lista{
+		max-width: 500px;
+
+	}
+	
+}
